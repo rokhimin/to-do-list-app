@@ -4,11 +4,13 @@
 #### About
 
 To do list app client side
+saved in localstorage browser
 
 #### Live
 
 https://rokhimin.github.io/to-do-list-app
 
+https://to-do-list-app-eight-gules.vercel.app/
 
 ## Contributing
 
