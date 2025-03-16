@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">To-Do List</h1>
+
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <div class="box has-background-black-bis">
+            <!-- Input form -->
+          <div class="field">
+              <div class="control">
+              <textarea
+                  class="textarea"
+                  id="taskInput"
+                  placeholder="Add a new task"
+              ></textarea>
+              </div>
+              <div class="control mt-2">
+              <button class="button is-link" id="addTaskBtn">
+                  <span class="icon">
+                  <i class="fas fa-plus"></i>
+                  </span>
+                  <span>Add</span>
+              </button>
+              </div>
+          </div>
+
+
+            <!-- Task filters -->
+            <div class="tabs is-centered">
+              <ul>
+                <li class="is-active" data-filter="all"><a>All</a></li>
+                <li data-filter="active"><a>Active</a></li>
+                <li data-filter="completed"><a>Completed</a></li>
+              </ul>
+            </div>
+
+            <!-- Task list with improved overflow handling -->
+            <div class="task-list" id="taskList">
+              <div class="no-tasks">No tasks yet</div>
+            </div>
+
+            <!-- Task controls -->
+            <div class="level is-mobile mt-4">
+              <div class="level-left">
+                <div class="level-item">
+                  <span id="taskCount">0 tasks</span>
+                </div>
+              </div>
+              <div class="level-right">
+                <div class="level-item">
+                  <button
+                    class="button is-small is-danger is-light"
+                    id="clearCompletedBtn"
+                  >
+                    Clear Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<script src="{{ site.baseurl }}/assets/todolist.js"></script>
